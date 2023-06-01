@@ -12,8 +12,8 @@ def task()
   world = Robota::World
   world.read_world("../worlds/LineSweep.txt")
 
-  karel = Square.new(1, 5, Robota::NORTH, 100)
-  karel.bird_beeper
+  karel = Sqwam.new(1, 5, Robota::NORTH, 100)
+  karel.SquareSimbol
   world.show_world_with_robots(1, 5, 6, 6)
   karel.display()
 

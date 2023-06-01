@@ -34,12 +34,62 @@ class Sqwam < UrRobot
       turn_right
     end
 
-    def sweep_five
+    def SquareSimbol
       bird_place
+      turn_right
+      turn_right
+      move
+      move
+      move
+      turn_left
+      move
+      move
+      move
+      move
+      move
+      turn_left
+      bird_place
+      turn_right
+      turn_right
+      move
+      move
+      move
+      turn_left
+      move
+      move
+      move
+      move
+      move
+      turn_left
+      bird_place
+      turn_right
+      turn_right
+      move
+      move
+      move
+      turn_left
+      move
+      move
+      move
+      move
+      move
+      turn_left
+      bird_place
+      turn_right
+      turn_right
+      move
+      move
+      move
+      turn_left
+      move
+      move
+      move
+      move
+      move
     end
   
  def run_task
-    bird_beeper
+    SquareSimbol
   end
 
 
