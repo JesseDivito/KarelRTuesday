@@ -44,7 +44,7 @@ if __FILE__ == $0
      screen = window(8, 10) # (size, speed)
      screen.run do
        task()
-     end
+     
    else
      task()
    end

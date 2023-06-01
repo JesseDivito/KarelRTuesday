@@ -32,6 +32,7 @@ class StairSweeper < UrRobot
   # The standard task for this class of robots
  def run_task
     sweep_stairs
-  end
+  
+
 
 end
