@@ -4,17 +4,17 @@
 
 $graphical = true
 
-require_relative "RockGoop"
+require_relative "construction_worker"
 require_relative "../karel/robota"
 
-# a task for a line sweeper
+# a task for a big truck asshole
 def task()
   world = Robota::World
   world.read_world("../worlds/LineSweep.txt")
 
-  karel = SideWalk.new(9, 2, Robota::SOUTH, 100)
+  karel = Work.new(9, 2, Robota::SOUTH, 100)
   karel.SquareSimbol
-  world.show_world_with_robots(1, 5, 6, 6)
+  world.show_world_with_robots(1, 5, 10, 10)
   karel.display()
 
 end

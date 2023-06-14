@@ -5,39 +5,39 @@
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
 # A class whose robots know how to place many beepers in a straight line.
-class SideWalk < UrRobot
+class Handle < UrRobot
   include Turner
   def initialize (street, avenue, direction, beepers)
     super(street, avenue, direction, beepers)
   end
 
-    def ItsBeingABitch
+    def bird_place
       put_beeper
       move
       put_beeper
       turn_left
       move
-      turn_right
+      put_beeper
       move
       put_beeper
-      turn_left
       move
       turn_right
+      put_beeper
       move
       put_beeper
-      turn_left
-      move
-      turn_right
       move
       put_beeper
-      turn_left
       move
-      turn_right
+      turn_left
+
+
     end
 
     def SquareSimbol
-      ItsBeingABitch
-      move
+      bird_place
+      bird_place
+      bird_place
+      bird_place
     end
   
  def run_task
